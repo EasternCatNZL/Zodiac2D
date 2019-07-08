@@ -39,9 +39,13 @@ public class TileBehavior : MonoBehaviour
         Sea
     }
 
+    [Header("Tile propeties")]
     public TileValues value;
     public TilePosition position;
     public TileNeighbours neighbours;
+
+    [Tooltip("Team of tile")]
+    public int teamNum = 0; //0 = neutral
 
     //[Header("Tile details")]
     //public int coverVal = 1;

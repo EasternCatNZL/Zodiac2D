@@ -6,12 +6,8 @@ using UnityEngine.Tilemaps;
 using UnityEditor;
 #endif
 
-public class PlainsTile : Tile
+public class CityTile : Tile
 {
-    //public Sprite[] sprites;
-    //public Sprite previewSprite;
-    //public GameObject tileObject;
-
     public override void RefreshTile(Vector3Int position, ITilemap tilemap)
     {
         base.RefreshTile(position, tilemap);
@@ -34,15 +30,15 @@ public class PlainsTile : Tile
     }
 
 #if UNITY_EDITOR
-    [MenuItem("Professor Cat's Lab/Create/PlainsTile")]
-    public static void CreatePlainsTile()
+    [MenuItem("Professor Cat's Lab/Create/CityTile")]
+    public static void CreateCityTile()
     {
-        string path = EditorUtility.SaveFilePanelInProject("Save Plains Tile", "New Plains Tile", "Asset", "Save Plains Tile", "Assets");
-        if(path == "")
+        string path = EditorUtility.SaveFilePanelInProject("Save City Tile", "New City Tile", "Asset", "Save City Tile", "Assets");
+        if (path == "")
         {
             return;
         }
-        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<PlainsTile>(), path);
+        AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<CityTile>(), path);
     }
 #endif
 }

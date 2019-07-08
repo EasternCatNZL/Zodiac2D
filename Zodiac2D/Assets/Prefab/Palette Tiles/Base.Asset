@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e36db015f3fc6a34aa0b6459aa41fea4, type: 3}
-  m_Name: Plains
+  m_Script: {fileID: 11500000, guid: d664640d921a3784bb5aecb0b453c770, type: 3}
+  m_Name: Base
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 384b78e696b16a64b9a7b6cbdff971e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5d556c31b36e5db4ca05099380087498, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -31,7 +31,7 @@ MonoBehaviour:
     e31: 0
     e32: 0
     e33: 1
-  m_InstancedGameObject: {fileID: 2002480488251538803, guid: 5ba4958bc0f8a354786394afaaa52283,
+  m_InstancedGameObject: {fileID: 3779842673826433977, guid: 7a63e9d333b17884c94bae101060e3c8,
     type: 3}
   m_Flags: 1
-  m_ColliderType: 2
+  m_ColliderType: 1
